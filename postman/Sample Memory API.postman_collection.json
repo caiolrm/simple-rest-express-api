@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "5d6e77a6-4856-4b27-a23b-db063acdcbd6",
+		"name": "Sample Memory API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{apiKey}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Caio\",\n    \"idade\": 15\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/products",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{apiKey}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{host}}:{{port}}/products/abc44eff-ebdf-4759-bbe8-995807e9f306",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"products",
+						"abc44eff-ebdf-4759-bbe8-995807e9f306"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{apiKey}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{host}}:{{port}}/products",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update By Id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{apiKey}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Lucas\",\n    \"idade\": 26\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/products/405eb4c3-104a-4e30-bdcb-f8a8566dc65d",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"products",
+						"405eb4c3-104a-4e30-bdcb-f8a8566dc65d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete By Id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{apiKey}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Lucas\",\n    \"idade\": 26\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/products/405eb4c3-104a-4e30-bdcb-f8a8566dc65d",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"products",
+						"405eb4c3-104a-4e30-bdcb-f8a8566dc65d"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
